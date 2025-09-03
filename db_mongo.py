@@ -2,10 +2,7 @@ from pymongo import MongoClient
 
 def get_mongo_client():
     # Thay đổi thông tin đăng nhập bên dưới cho phù hợp với MongoDB của bạn
-    host = "103.214.8.89"
-    port = 27017
-    db_name = "gmail_accounts"
-    uri = f"mongodb://admin:AdminVpsx@103.214.8.89:27017/{db_name}?authSource=admin"
+    uri = "mongodb://admin:AdminVpsx@103.214.8.89:27017/gmail_accounts?authSource=admin"
     return MongoClient(uri)
 
 def save_account_to_mongo(account_info):

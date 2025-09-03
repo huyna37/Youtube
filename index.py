@@ -5,10 +5,10 @@ from db_mongo import save_account_to_mongo, get_created_accounts_count
 
 def main():
     parser = argparse.ArgumentParser(description="Gmail Account Creator & Youtube Simulator")
-    parser.add_argument("--num_accounts", type=int, help="Số lượng tài khoản cần tạo", required=True)
+    parser.add_argument("--n", type=int, help="Số lượng tài khoản cần tạo", required=True)
     args = parser.parse_args()
 
-    num_accounts = args.num_accounts
+    num_accounts = args.n
     created_count = get_created_accounts_count()
     for i in range(created_count, created_count + num_accounts):
         profile_path = f"profiles/profile_{i+1}/"

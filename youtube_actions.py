@@ -25,6 +25,7 @@ def get_undetect_chrome_options(profile_path):
 
 def create_gmail_account(profile_path):
     chrome_options = get_undetect_chrome_options(profile_path)
+    chrome_options.binary_location = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
     driver = uc.Chrome(options=chrome_options)
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
         "source": "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
