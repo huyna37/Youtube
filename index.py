@@ -1,5 +1,5 @@
 import argparse
-from youtube_actions import create_gmail_account, browse_youtube_with_profile
+from create_email import create_gmail_account
 from db_mongo import save_account_to_mongo, get_created_accounts_count
 
 
@@ -15,7 +15,6 @@ def main():
         account_info = create_gmail_account(profile_path)
         if account_info:
             save_account_to_mongo(account_info)
-            browse_youtube_with_profile(profile_path)
         else:
             print(f"Không thể tạo tài khoản thứ {i+1}")
 
