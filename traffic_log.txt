@@ -1,0 +1,467 @@
+2025-09-05 23:38:36,319 - INFO - Starting traffic simulation to vpsx.me
+2025-09-05 23:38:36,320 - INFO - Using proxy: http://103.214.8.89:10000
+2025-09-05 23:38:36,320 - INFO - 
+--- Visit #1 ---
+2025-09-05 23:38:36,320 - INFO - Performing search-based visit
+2025-09-05 23:38:36,320 - INFO - Attempting search on google (attempt 1)
+2025-09-05 23:38:37,571 - INFO - patching driver executable C:\Users\Huy\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-09-05 23:38:42,079 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0x11bd283+66419]
+	GetHandleVerifier [0x0x11bd2c4+66484]
+	(No symbol) [0x0xf94bd3]
+	(No symbol) [0x0xfbd0f3]
+	(No symbol) [0x0xfbe8b0]
+	(No symbol) [0x0xfb991a]
+	(No symbol) [0x0x100b5e2]
+	(No symbol) [0x0x100b0b6]
+	(No symbol) [0x0x100c7f0]
+	(No symbol) [0x0x100c5ea]
+	(No symbol) [0x0x1000e16]
+	(No symbol) [0x0xfd25ce]
+	(No symbol) [0x0xfd34a4]
+	GetHandleVerifier [0x0x1405ec3+2461619]
+	GetHandleVerifier [0x0x1400f46+2441270]
+	GetHandleVerifier [0x0x11e6222+234258]
+	GetHandleVerifier [0x0x11d61e8+168664]
+	GetHandleVerifier [0x0x11dd18d+197245]
+	GetHandleVerifier [0x0x11c55d8+100040]
+	GetHandleVerifier [0x0x11c5772+100450]
+	GetHandleVerifier [0x0x11af72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:38:42,082 - INFO - Attempting search on google (attempt 2)
+2025-09-05 23:38:42,640 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0x11bd283+66419]
+	GetHandleVerifier [0x0x11bd2c4+66484]
+	(No symbol) [0x0xf94bd3]
+	(No symbol) [0x0xfbd0f3]
+	(No symbol) [0x0xfbe8b0]
+	(No symbol) [0x0xfb991a]
+	(No symbol) [0x0x100b5e2]
+	(No symbol) [0x0x100b0b6]
+	(No symbol) [0x0x100c7f0]
+	(No symbol) [0x0x100c5ea]
+	(No symbol) [0x0x1000e16]
+	(No symbol) [0x0xfd25ce]
+	(No symbol) [0x0xfd34a4]
+	GetHandleVerifier [0x0x1405ec3+2461619]
+	GetHandleVerifier [0x0x1400f46+2441270]
+	GetHandleVerifier [0x0x11e6222+234258]
+	GetHandleVerifier [0x0x11d61e8+168664]
+	GetHandleVerifier [0x0x11dd18d+197245]
+	GetHandleVerifier [0x0x11c55d8+100040]
+	GetHandleVerifier [0x0x11c5772+100450]
+	GetHandleVerifier [0x0x11af72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:38:42,642 - INFO - Attempting search on google (attempt 3)
+2025-09-05 23:38:43,179 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0x11bd283+66419]
+	GetHandleVerifier [0x0x11bd2c4+66484]
+	(No symbol) [0x0xf94bd3]
+	(No symbol) [0x0xfbd0f3]
+	(No symbol) [0x0xfbe8b0]
+	(No symbol) [0x0xfb991a]
+	(No symbol) [0x0x100b5e2]
+	(No symbol) [0x0x100b0b6]
+	(No symbol) [0x0x100c7f0]
+	(No symbol) [0x0x100c5ea]
+	(No symbol) [0x0x1000e16]
+	(No symbol) [0x0xfd25ce]
+	(No symbol) [0x0xfd34a4]
+	GetHandleVerifier [0x0x1405ec3+2461619]
+	GetHandleVerifier [0x0x1400f46+2441270]
+	GetHandleVerifier [0x0x11e6222+234258]
+	GetHandleVerifier [0x0x11d61e8+168664]
+	GetHandleVerifier [0x0x11dd18d+197245]
+	GetHandleVerifier [0x0x11c55d8+100040]
+	GetHandleVerifier [0x0x11c5772+100450]
+	GetHandleVerifier [0x0x11af72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:38:43,181 - INFO - Attempting search on coccoc (attempt 1)
+2025-09-05 23:38:43,721 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0x11bd283+66419]
+	GetHandleVerifier [0x0x11bd2c4+66484]
+	(No symbol) [0x0xf94bd3]
+	(No symbol) [0x0xfbd0f3]
+	(No symbol) [0x0xfbe8b0]
+	(No symbol) [0x0xfb991a]
+	(No symbol) [0x0x100b5e2]
+	(No symbol) [0x0x100b0b6]
+	(No symbol) [0x0x100c7f0]
+	(No symbol) [0x0x100c5ea]
+	(No symbol) [0x0x1000e16]
+	(No symbol) [0x0xfd25ce]
+	(No symbol) [0x0xfd34a4]
+	GetHandleVerifier [0x0x1405ec3+2461619]
+	GetHandleVerifier [0x0x1400f46+2441270]
+	GetHandleVerifier [0x0x11e6222+234258]
+	GetHandleVerifier [0x0x11d61e8+168664]
+	GetHandleVerifier [0x0x11dd18d+197245]
+	GetHandleVerifier [0x0x11c55d8+100040]
+	GetHandleVerifier [0x0x11c5772+100450]
+	GetHandleVerifier [0x0x11af72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:38:43,729 - INFO - Attempting search on coccoc (attempt 2)
+2025-09-05 23:38:44,933 - INFO - patching driver executable C:\Users\Huy\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-09-05 23:38:48,211 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0xaad283+66419]
+	GetHandleVerifier [0x0xaad2c4+66484]
+	(No symbol) [0x0x884bd3]
+	(No symbol) [0x0x8ad0f3]
+	(No symbol) [0x0x8ae8b0]
+	(No symbol) [0x0x8a991a]
+	(No symbol) [0x0x8fb5e2]
+	(No symbol) [0x0x8fb0b6]
+	(No symbol) [0x0x8fc7f0]
+	(No symbol) [0x0x8fc5ea]
+	(No symbol) [0x0x8f0e16]
+	(No symbol) [0x0x8c25ce]
+	(No symbol) [0x0x8c34a4]
+	GetHandleVerifier [0x0xcf5ec3+2461619]
+	GetHandleVerifier [0x0xcf0f46+2441270]
+	GetHandleVerifier [0x0xad6222+234258]
+	GetHandleVerifier [0x0xac61e8+168664]
+	GetHandleVerifier [0x0xacd18d+197245]
+	GetHandleVerifier [0x0xab55d8+100040]
+	GetHandleVerifier [0x0xab5772+100450]
+	GetHandleVerifier [0x0xa9f72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:38:48,214 - INFO - Attempting search on coccoc (attempt 3)
+2025-09-05 23:38:48,786 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0xaad283+66419]
+	GetHandleVerifier [0x0xaad2c4+66484]
+	(No symbol) [0x0x884bd3]
+	(No symbol) [0x0x8ad0f3]
+	(No symbol) [0x0x8ae8b0]
+	(No symbol) [0x0x8a991a]
+	(No symbol) [0x0x8fb5e2]
+	(No symbol) [0x0x8fb0b6]
+	(No symbol) [0x0x8fc7f0]
+	(No symbol) [0x0x8fc5ea]
+	(No symbol) [0x0x8f0e16]
+	(No symbol) [0x0x8c25ce]
+	(No symbol) [0x0x8c34a4]
+	GetHandleVerifier [0x0xcf5ec3+2461619]
+	GetHandleVerifier [0x0xcf0f46+2441270]
+	GetHandleVerifier [0x0xad6222+234258]
+	GetHandleVerifier [0x0xac61e8+168664]
+	GetHandleVerifier [0x0xacd18d+197245]
+	GetHandleVerifier [0x0xab55d8+100040]
+	GetHandleVerifier [0x0xab5772+100450]
+	GetHandleVerifier [0x0xa9f72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:38:48,788 - INFO - Attempting search on bing (attempt 1)
+2025-09-05 23:38:49,343 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0xaad283+66419]
+	GetHandleVerifier [0x0xaad2c4+66484]
+	(No symbol) [0x0x884bd3]
+	(No symbol) [0x0x8ad0f3]
+	(No symbol) [0x0x8ae8b0]
+	(No symbol) [0x0x8a991a]
+	(No symbol) [0x0x8fb5e2]
+	(No symbol) [0x0x8fb0b6]
+	(No symbol) [0x0x8fc7f0]
+	(No symbol) [0x0x8fc5ea]
+	(No symbol) [0x0x8f0e16]
+	(No symbol) [0x0x8c25ce]
+	(No symbol) [0x0x8c34a4]
+	GetHandleVerifier [0x0xcf5ec3+2461619]
+	GetHandleVerifier [0x0xcf0f46+2441270]
+	GetHandleVerifier [0x0xad6222+234258]
+	GetHandleVerifier [0x0xac61e8+168664]
+	GetHandleVerifier [0x0xacd18d+197245]
+	GetHandleVerifier [0x0xab55d8+100040]
+	GetHandleVerifier [0x0xab5772+100450]
+	GetHandleVerifier [0x0xa9f72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:38:49,344 - INFO - Attempting search on bing (attempt 2)
+2025-09-05 23:38:49,889 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0xaad283+66419]
+	GetHandleVerifier [0x0xaad2c4+66484]
+	(No symbol) [0x0x884bd3]
+	(No symbol) [0x0x8ad0f3]
+	(No symbol) [0x0x8ae8b0]
+	(No symbol) [0x0x8a991a]
+	(No symbol) [0x0x8fb5e2]
+	(No symbol) [0x0x8fb0b6]
+	(No symbol) [0x0x8fc7f0]
+	(No symbol) [0x0x8fc5ea]
+	(No symbol) [0x0x8f0e16]
+	(No symbol) [0x0x8c25ce]
+	(No symbol) [0x0x8c34a4]
+	GetHandleVerifier [0x0xcf5ec3+2461619]
+	GetHandleVerifier [0x0xcf0f46+2441270]
+	GetHandleVerifier [0x0xad6222+234258]
+	GetHandleVerifier [0x0xac61e8+168664]
+	GetHandleVerifier [0x0xacd18d+197245]
+	GetHandleVerifier [0x0xab55d8+100040]
+	GetHandleVerifier [0x0xab5772+100450]
+	GetHandleVerifier [0x0xa9f72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:38:49,891 - INFO - Attempting search on bing (attempt 3)
+2025-09-05 23:38:50,431 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0xaad283+66419]
+	GetHandleVerifier [0x0xaad2c4+66484]
+	(No symbol) [0x0x884bd3]
+	(No symbol) [0x0x8ad0f3]
+	(No symbol) [0x0x8ae8b0]
+	(No symbol) [0x0x8a991a]
+	(No symbol) [0x0x8fb5e2]
+	(No symbol) [0x0x8fb0b6]
+	(No symbol) [0x0x8fc7f0]
+	(No symbol) [0x0x8fc5ea]
+	(No symbol) [0x0x8f0e16]
+	(No symbol) [0x0x8c25ce]
+	(No symbol) [0x0x8c34a4]
+	GetHandleVerifier [0x0xcf5ec3+2461619]
+	GetHandleVerifier [0x0xcf0f46+2441270]
+	GetHandleVerifier [0x0xad6222+234258]
+	GetHandleVerifier [0x0xac61e8+168664]
+	GetHandleVerifier [0x0xacd18d+197245]
+	GetHandleVerifier [0x0xab55d8+100040]
+	GetHandleVerifier [0x0xab5772+100450]
+	GetHandleVerifier [0x0xa9f72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:38:50,440 - WARNING - All search engines failed, falling back to direct access
+2025-09-05 23:38:50,440 - INFO - Search failed, falling back to direct visit
+2025-09-05 23:38:50,441 - INFO - Direct visit to vpsx.me (attempt 1)
+2025-09-05 23:38:51,602 - INFO - 
+Traffic simulation stopped by user
+2025-09-05 23:44:14,961 - INFO - Starting traffic simulation to vpsx.me
+2025-09-05 23:44:14,961 - INFO - Using proxy: http://103.214.8.89:10000
+2025-09-05 23:44:14,961 - INFO - 
+--- Visit #1 ---
+2025-09-05 23:44:14,962 - INFO - Performing direct visit
+2025-09-05 23:44:14,962 - INFO - Direct visit to vpsx.me (attempt 1)
+2025-09-05 23:44:15,959 - INFO - patching driver executable C:\Users\Huy\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-09-05 23:44:19,264 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0x4dd283+66419]
+	GetHandleVerifier [0x0x4dd2c4+66484]
+	(No symbol) [0x0x2b4bd3]
+	(No symbol) [0x0x2dd0f3]
+	(No symbol) [0x0x2de8b0]
+	(No symbol) [0x0x2d991a]
+	(No symbol) [0x0x32b5e2]
+	(No symbol) [0x0x32b0b6]
+	(No symbol) [0x0x32c7f0]
+	(No symbol) [0x0x32c5ea]
+	(No symbol) [0x0x320e16]
+	(No symbol) [0x0x2f25ce]
+	(No symbol) [0x0x2f34a4]
+	GetHandleVerifier [0x0x725ec3+2461619]
+	GetHandleVerifier [0x0x720f46+2441270]
+	GetHandleVerifier [0x0x506222+234258]
+	GetHandleVerifier [0x0x4f61e8+168664]
+	GetHandleVerifier [0x0x4fd18d+197245]
+	GetHandleVerifier [0x0x4e55d8+100040]
+	GetHandleVerifier [0x0x4e5772+100450]
+	GetHandleVerifier [0x0x4cf72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:44:19,267 - INFO - Direct visit to vpsx.me (attempt 2)
+2025-09-05 23:44:19,820 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0x4dd283+66419]
+	GetHandleVerifier [0x0x4dd2c4+66484]
+	(No symbol) [0x0x2b4bd3]
+	(No symbol) [0x0x2dd0f3]
+	(No symbol) [0x0x2de8b0]
+	(No symbol) [0x0x2d991a]
+	(No symbol) [0x0x32b5e2]
+	(No symbol) [0x0x32b0b6]
+	(No symbol) [0x0x32c7f0]
+	(No symbol) [0x0x32c5ea]
+	(No symbol) [0x0x320e16]
+	(No symbol) [0x0x2f25ce]
+	(No symbol) [0x0x2f34a4]
+	GetHandleVerifier [0x0x725ec3+2461619]
+	GetHandleVerifier [0x0x720f46+2441270]
+	GetHandleVerifier [0x0x506222+234258]
+	GetHandleVerifier [0x0x4f61e8+168664]
+	GetHandleVerifier [0x0x4fd18d+197245]
+	GetHandleVerifier [0x0x4e55d8+100040]
+	GetHandleVerifier [0x0x4e5772+100450]
+	GetHandleVerifier [0x0x4cf72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:44:19,821 - INFO - Direct visit to vpsx.me (attempt 3)
+2025-09-05 23:44:20,372 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0x4dd283+66419]
+	GetHandleVerifier [0x0x4dd2c4+66484]
+	(No symbol) [0x0x2b4bd3]
+	(No symbol) [0x0x2dd0f3]
+	(No symbol) [0x0x2de8b0]
+	(No symbol) [0x0x2d991a]
+	(No symbol) [0x0x32b5e2]
+	(No symbol) [0x0x32b0b6]
+	(No symbol) [0x0x32c7f0]
+	(No symbol) [0x0x32c5ea]
+	(No symbol) [0x0x320e16]
+	(No symbol) [0x0x2f25ce]
+	(No symbol) [0x0x2f34a4]
+	GetHandleVerifier [0x0x725ec3+2461619]
+	GetHandleVerifier [0x0x720f46+2441270]
+	GetHandleVerifier [0x0x506222+234258]
+	GetHandleVerifier [0x0x4f61e8+168664]
+	GetHandleVerifier [0x0x4fd18d+197245]
+	GetHandleVerifier [0x0x4e55d8+100040]
+	GetHandleVerifier [0x0x4e5772+100450]
+	GetHandleVerifier [0x0x4cf72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:44:20,373 - ERROR - Visit #1 failed
+2025-09-05 23:44:20,373 - INFO - Waiting 196.2 seconds before next visit...
+2025-09-05 23:44:38,344 - INFO - 
+Traffic simulation stopped by user
+2025-09-05 23:44:47,771 - INFO - Starting traffic simulation to vpsx.me
+2025-09-05 23:44:47,772 - INFO - Using proxy: http://103.214.8.89:10000
+2025-09-05 23:44:47,772 - INFO - 
+--- Visit #1 ---
+2025-09-05 23:44:47,772 - INFO - Performing direct visit
+2025-09-05 23:44:47,772 - INFO - Direct visit to vpsx.me (attempt 1)
+2025-09-05 23:44:48,833 - INFO - patching driver executable C:\Users\Huy\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-09-05 23:44:52,085 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0x6cd283+66419]
+	GetHandleVerifier [0x0x6cd2c4+66484]
+	(No symbol) [0x0x4a4bd3]
+	(No symbol) [0x0x4cd0f3]
+	(No symbol) [0x0x4ce8b0]
+	(No symbol) [0x0x4c991a]
+	(No symbol) [0x0x51b5e2]
+	(No symbol) [0x0x51b0b6]
+	(No symbol) [0x0x51c7f0]
+	(No symbol) [0x0x51c5ea]
+	(No symbol) [0x0x510e16]
+	(No symbol) [0x0x4e25ce]
+	(No symbol) [0x0x4e34a4]
+	GetHandleVerifier [0x0x915ec3+2461619]
+	GetHandleVerifier [0x0x910f46+2441270]
+	GetHandleVerifier [0x0x6f6222+234258]
+	GetHandleVerifier [0x0x6e61e8+168664]
+	GetHandleVerifier [0x0x6ed18d+197245]
+	GetHandleVerifier [0x0x6d55d8+100040]
+	GetHandleVerifier [0x0x6d5772+100450]
+	GetHandleVerifier [0x0x6bf72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:44:52,089 - INFO - Direct visit to vpsx.me (attempt 2)
+2025-09-05 23:44:52,644 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0x6cd283+66419]
+	GetHandleVerifier [0x0x6cd2c4+66484]
+	(No symbol) [0x0x4a4bd3]
+	(No symbol) [0x0x4cd0f3]
+	(No symbol) [0x0x4ce8b0]
+	(No symbol) [0x0x4c991a]
+	(No symbol) [0x0x51b5e2]
+	(No symbol) [0x0x51b0b6]
+	(No symbol) [0x0x51c7f0]
+	(No symbol) [0x0x51c5ea]
+	(No symbol) [0x0x510e16]
+	(No symbol) [0x0x4e25ce]
+	(No symbol) [0x0x4e34a4]
+	GetHandleVerifier [0x0x915ec3+2461619]
+	GetHandleVerifier [0x0x910f46+2441270]
+	GetHandleVerifier [0x0x6f6222+234258]
+	GetHandleVerifier [0x0x6e61e8+168664]
+	GetHandleVerifier [0x0x6ed18d+197245]
+	GetHandleVerifier [0x0x6d55d8+100040]
+	GetHandleVerifier [0x0x6d5772+100450]
+	GetHandleVerifier [0x0x6bf72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:44:52,646 - INFO - Direct visit to vpsx.me (attempt 3)
+2025-09-05 23:44:53,180 - ERROR - Failed to create driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0x6cd283+66419]
+	GetHandleVerifier [0x0x6cd2c4+66484]
+	(No symbol) [0x0x4a4bd3]
+	(No symbol) [0x0x4cd0f3]
+	(No symbol) [0x0x4ce8b0]
+	(No symbol) [0x0x4c991a]
+	(No symbol) [0x0x51b5e2]
+	(No symbol) [0x0x51b0b6]
+	(No symbol) [0x0x51c7f0]
+	(No symbol) [0x0x51c5ea]
+	(No symbol) [0x0x510e16]
+	(No symbol) [0x0x4e25ce]
+	(No symbol) [0x0x4e34a4]
+	GetHandleVerifier [0x0x915ec3+2461619]
+	GetHandleVerifier [0x0x910f46+2441270]
+	GetHandleVerifier [0x0x6f6222+234258]
+	GetHandleVerifier [0x0x6e61e8+168664]
+	GetHandleVerifier [0x0x6ed18d+197245]
+	GetHandleVerifier [0x0x6d55d8+100040]
+	GetHandleVerifier [0x0x6d5772+100450]
+	GetHandleVerifier [0x0x6bf72a+10266]
+	BaseThreadInitThunk [0x0x765dfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77a582ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77a5827e+238]
+
+2025-09-05 23:44:53,182 - ERROR - Visit #1 failed
+2025-09-05 23:44:53,183 - INFO - Waiting 501.0 seconds before next visit...
+2025-09-05 23:44:55,243 - INFO - 
+Traffic simulation stopped by user
