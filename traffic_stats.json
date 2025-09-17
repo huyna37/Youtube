@@ -1,12 +1,12 @@
 {
-  "total_visits": 2,
-  "direct_visits": 1,
-  "search_visits": 0,
-  "successful_visits": 1,
-  "failed_visits": 0,
+  "total_visits": 694,
+  "direct_visits": 553,
+  "search_visits": 140,
+  "successful_visits": 693,
+  "failed_visits": 1,
   "search_engines_used": {
-    "google": 0
+    "google": 140
   },
-  "start_time": "2025-09-07T10:22:40.071786",
-  "last_updated": "2025-09-07T10:23:39.613387"
+  "start_time": "2025-09-15T13:55:14.119868",
+  "last_updated": "2025-09-16T08:03:27.010349"
 }
