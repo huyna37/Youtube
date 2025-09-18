@@ -4,16 +4,17 @@ import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from selenium.webdriver.firefox.service import Service as FirefoxService
 import os
 import shutil
 import logging
 from datetime import datetime
+import tempfile
+import uuid
 
-FIXED_PROXY = "103.171.1.4:8174:YZzexadult:YlyHvtdx"
+FIXED_PROXY = "103.171.1.4:8174"
 
 VISIT_PAGES = [
-    "https://fptshop.com.vn/",
-    "https://www.traveloka.com/vi-vn",
     "https://www.agoda.com/vi-vn/city/hanoi-vn.html",
 ]
 TARGET_PAGE = "https://noithatspa.io.vn"
@@ -21,7 +22,8 @@ TARGET_PAGE = "https://noithatspa.io.vn"
 NAV_LINKS = [
     "https://noithatspa.io.vn/index.php?rp=/announcements",
     "https://noithatspa.io.vn/index.php?rp=/knowledgebase",
-    "https://noithatspa.io.vn"
+    "https://noithatspa.io.vn/serverstatus.php",
+    "https://noithatspa.io.vn/contact.php"
 ]
 
 logging.basicConfig(
@@ -35,14 +37,22 @@ logging.basicConfig(
 
 def get_driver(proxy=None):
     firefox_options = FirefoxOptions()
-    profile_id = random.randint(100000, 999999)
+    # Tạo profile mới hoàn toàn bằng UUID, đảm bảo không trùng lặp
+    profile_id = str(uuid.uuid4())
     profile_dir = os.path.abspath(f"profiles/profile_{profile_id}")
+    if os.path.exists(profile_dir):
+        shutil.rmtree(profile_dir)
     os.makedirs(profile_dir, exist_ok=True)
-    firefox_options.set_preference("profile", profile_dir)
+    firefox_options.profile = profile_dir
+    firefox_options.set_preference("dom.webdriver.enabled", False)
+    firefox_options.set_preference("useAutomationExtension", False)
+    firefox_options.set_preference("privacy.clearOnShutdown.cookies", True)
+    firefox_options.set_preference("privacy.clearOnShutdown.cache", True)
+    firefox_options.set_preference("network.cookie.cookieBehavior", 0)
     user_agent = random.choice([
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0",
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/117.0",
-        "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:117.0) Gecko/20100101 Firefox/117.0",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:117.0) Gecko/20100101 Firefox/117.0",
+        "Mozilla/5.0 (X11; Linux x86_64; rv:117.0) Gecko/20100101 Firefox/117.0",
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0",
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:120.0) Gecko/20100101 Firefox/120.0",
         "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"
@@ -50,13 +60,19 @@ def get_driver(proxy=None):
     firefox_options.set_preference("general.useragent.override", user_agent)
     if proxy:
         firefox_options.set_preference("network.proxy.type", 1)
-        proxy_host, proxy_port = proxy.replace("http://","").split(":")
-        firefox_options.set_preference("network.proxy.http", proxy_host)
-        firefox_options.set_preference("network.proxy.http_port", int(proxy_port))
-        firefox_options.set_preference("network.proxy.ssl", proxy_host)
-        firefox_options.set_preference("network.proxy.ssl_port", int(proxy_port))
+        host, port = proxy.split(":")
+        firefox_options.set_preference("network.proxy.http", host)
+        firefox_options.set_preference("network.proxy.http_port", int(port))
+        firefox_options.set_preference("network.proxy.ssl", host)
+        firefox_options.set_preference("network.proxy.ssl_port", int(port))
     try:
         driver = webdriver.Firefox(options=firefox_options)
+        # Xóa navigator.webdriver
+        driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        # Tăng độ giống người thật
+        driver.execute_script("Object.defineProperty(navigator, 'languages', {get: () => ['vi-VN', 'en-US', 'en']})")
+        driver.execute_script("Object.defineProperty(navigator, 'plugins', {get: () => [1,2,3,4,5]})")
+        driver.delete_all_cookies()
         return driver, profile_dir
     except Exception:
         return None, profile_dir
@@ -97,6 +113,18 @@ def scroll_top_to_bottom(driver):
     except Exception as e:
         logging.warning(f"Scroll error: {e}")
 
+def random_mouse_move(driver, moves=5):
+    try:
+        body = driver.find_element(By.TAG_NAME, 'body')
+        for _ in range(moves):
+            x = random.randint(50, 500)
+            y = random.randint(50, 400)
+            driver.execute_script(f"window.scrollBy({random.randint(-50,50)}, {random.randint(-100,100)});")
+            driver.execute_script(f"window.scrollTo({x}, {y});")
+            time.sleep(random.uniform(0.2, 0.8))
+    except Exception as e:
+        logging.warning(f"Mouse move error: {e}")
+
 def safe_get(driver, url, timeout=30, try_new_tab_on_fail=True):
     try:
         driver.set_page_load_timeout(timeout)
@@ -135,14 +163,35 @@ def run_custom_traffic():
                     continue
                 try:
                     if safe_get(driver, TARGET_PAGE):
-                        # Click all nav links, wait 10s after each
+                        # Simulate human actions
                         time.sleep(10)
                         for nav_url in NAV_LINKS:
                             logging.info(f"Clicking nav link: {nav_url}")
-                            driver.get(nav_url)
-                            logging.info("Waiting 10 seconds on nav page")
-                            time.sleep(10)
-                        time.sleep(20)
+                            try:
+                                # Tìm link trên trang và click thay vì driver.get
+                                link_text = nav_url.split('/')[-1] or nav_url.split('/')[-2]
+                                found = False
+                                # Thử tìm theo href tuyệt đối
+                                links = driver.find_elements(By.XPATH, f"//a[@href='{nav_url}']")
+                                if not links:
+                                    # Thử tìm theo partial href
+                                    partial = nav_url.replace('https://', '').replace('http://', '').split('/')[-1]
+                                    links = driver.find_elements(By.XPATH, f"//a[contains(@href, '{partial}')]")
+                                if not links:
+                                    # Thử tìm theo text
+                                    text_guess = link_text.replace('.php', '').replace('.html', '').replace('-', ' ').title()
+                                    links = driver.find_elements(By.PARTIAL_LINK_TEXT, text_guess)
+                                if links:
+                                    links[0].click()
+                                    found = True
+                                    logging.info(f"Clicked nav link element for {nav_url}")
+                                    time.sleep(2)
+                                else:
+                                    logging.warning(f"Nav link not found for {nav_url}, fallback to driver.get")
+                                logging.info("Waiting 10 seconds on nav page")
+                                time.sleep(5)
+                            except Exception as e:
+                                logging.error(f"Error clicking nav link {nav_url}: {e}")
                 except Exception as e:
                     logging.error(f"Error during direct visit: {e}")
                 finally:
@@ -166,10 +215,31 @@ def run_custom_traffic():
                         time.sleep(10)
                         for nav_url in NAV_LINKS:
                             logging.info(f"Clicking nav link: {nav_url}")
-                            driver.get(nav_url)
-                            logging.info("Waiting 10 seconds on nav page")
-                            time.sleep(10)
-                        time.sleep(20)
+                            try:
+                                # Tìm link trên trang và click thay vì driver.get
+                                link_text = nav_url.split('/')[-1] or nav_url.split('/')[-2]
+                                found = False
+                                # Thử tìm theo href tuyệt đối
+                                links = driver.find_elements(By.XPATH, f"//a[@href='{nav_url}']")
+                                if not links:
+                                    # Thử tìm theo partial href
+                                    partial = nav_url.replace('https://', '').replace('http://', '').split('/')[-1]
+                                    links = driver.find_elements(By.XPATH, f"//a[contains(@href, '{partial}')]")
+                                if not links:
+                                    # Thử tìm theo text
+                                    text_guess = link_text.replace('.php', '').replace('.html', '').replace('-', ' ').title()
+                                    links = driver.find_elements(By.PARTIAL_LINK_TEXT, text_guess)
+                                if links:
+                                    links[0].click()
+                                    found = True
+                                    logging.info(f"Clicked nav link element for {nav_url}")
+                                    time.sleep(2)
+                                else:
+                                    logging.warning(f"Nav link not found for {nav_url}, fallback to driver.get")
+                                logging.info("Waiting 10 seconds on nav page")
+                                time.sleep(5)
+                            except Exception as e:
+                                logging.error(f"Error clicking nav link {nav_url}: {e}")
                 except Exception as e:
                     logging.error(f"Error during visit: {e}")
                 finally:
